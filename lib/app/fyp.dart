@@ -13,8 +13,11 @@ class Fyp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         "/": (context) {
-          return Communicate();
+          return Splash();
         },
+        '/home': (context) {
+          return Home();
+        }
       },
     );
   }

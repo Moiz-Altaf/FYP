@@ -1,34 +1,25 @@
-// import 'package:flutter/material.dart';
-// import 'package:fyp/Screens/Animination.dart';
-// import 'package:fyp/Screens/Home.dart';
-
-// class Splash extends StatefulWidget {
-//   const Splash({Key? key}) : super(key: key);
-
-//   @override
-//   _SplashState createState() => _SplashState();
-// }
-
-// class _SplashState extends State<Splash> {
-//   @override
-//   void initState() {
-//     Future.delayed(Duration(seconds: 2), () {
-//       Navigator.of(context).pushNamed(Animination.routeName);
-//     });
-//     super.initState();
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Container(color: Colors.blue),
-//     );
-//   }
-// }
 import 'package:flutter/material.dart';
+import 'package:fyp/Screens/Animination.dart';
+import 'package:fyp/Screens/Home.dart';
+import 'package:fyp/Screens/Splash2.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Splash extends StatelessWidget {
+class Splash extends StatefulWidget {
+  const Splash({Key? key}) : super(key: key);
+
+  @override
+  _SplashState createState() => _SplashState();
+}
+
+class _SplashState extends State<Splash> {
+  @override
+  void initState() {
+    Future.delayed(Duration(seconds: 5), () {
+      Navigator.of(context).pushNamed('/home');
+    });
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

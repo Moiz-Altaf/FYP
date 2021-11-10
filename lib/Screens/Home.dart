@@ -52,13 +52,29 @@ class Home extends StatelessWidget {
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => Communicate()));
               },
-              child: Text(
-                'Sign Language',
-                style: GoogleFonts.dancingScript(
-                  fontSize: 30,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Start',
+                    style: GoogleFonts.dancingScript(
+                      fontSize: 50,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    'Commuication',
+                    style: GoogleFonts.dancingScript(
+                      fontSize: 50,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
               ),
             ),
           ),

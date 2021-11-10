@@ -7,7 +7,6 @@ class Communicate extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.amberAccent,
         body: Stack(
           children: [
             Column(
@@ -40,7 +39,7 @@ class Communicate extends StatelessWidget {
                       children: [
                         Container(
                             alignment: Alignment.centerLeft,
-                            color: Colors.amberAccent,
+                            color: Colors.white,
 
                             // gradient: LinearGradient(
                             //   colors: [
